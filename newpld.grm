@@ -1,0 +1,61 @@
+! Welcome to GOLD Parser Builder 5.2
+"start symbol"=<program>
+!-------terminal------
+
+id = {letter}
+num={digit}
+
+!-------rules------
+   
+<start>::=<program>
+
+<program>::=<stmt_list>
+
+<stmt_list>::=<stmt>
+            |<stmt><stmt_list>
+
+<stmt>::=<assignment>
+        |<conditional>
+        |<loop>
+!--------assignment-----
+<identifier>::= id
+<assignment>::=<identifier> '=' <expr>
+             <expr>::= <expr>'+' <term>
+       |<expr> '-' <term>
+       |<term>
+
+<term>::=<term>'*'<factor>
+       |<term>'/'<factor>
+       |<term>'%'<factor>
+       |<factor> 
+
+<factor>::=<factor>'**'<exp> 
+         |<exp>  
+
+<exp>::='('<expr>')'
+      |<identifier>
+      |<num>
+ 
+<num>::= num
+!--------conditional-----
+<conditional>::=if '(' <cond> ')' <block>
+              |if '(' <cond> ')' <block> 'otherwise' <block>
+              |'decide' '(' <expr> ')' <block>
+              
+<cond>::= <expr><op><expr>
+
+<op>::= '<'|'>'|'=='|'!='
+!---------loop------------
+<loop>::='iterate' '(' <identifier> 'over' <expr> ')' <block>
+        |'while' '(' <cond> ')' <block>
+        |'do' <block> 'until' '(' <cond> ')'
+
+<block>::=<stmt>
+        |'{' <stmt_list> '}'
+
+
+
+
+
+
+

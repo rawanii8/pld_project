@@ -1,0 +1,13 @@
+D:\puzzleme\pldproj\pld\pld\bin\Debug\pld.exe.config
+D:\puzzleme\pldproj\pld\pld\bin\Debug\pld.exe
+D:\puzzleme\pldproj\pld\pld\bin\Debug\pld.pdb
+D:\puzzleme\pldproj\pld\pld\bin\Debug\CalithaLib.dll
+D:\puzzleme\pldproj\pld\pld\bin\Debug\GoldParserEngine.dll
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.csproj.AssemblyReference.cache
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.Form1.resources
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.Properties.Resources.resources
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.csproj.GenerateResource.cache
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.csproj.CoreCompileInputs.cache
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.csproj.CopyComplete
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.exe
+D:\puzzleme\pldproj\pld\pld\obj\Debug\pld.pdb
